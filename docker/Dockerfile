@@ -28,9 +28,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends \
-    docker.io
-
 RUN ansible-galaxy role install diodonfrost.ohmyzsh && \
     ansible-pull -U https://github.com/diodonfrost/ansible-role-ohmyzsh tests/test.yml
+
+RUN ansible-galaxy role install diodonfrost.p10k && \
+    ansible-pull -U https://github.com/diodonfrost/ansible-role-p10k tests/test.yml

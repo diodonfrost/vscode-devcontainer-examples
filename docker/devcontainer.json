@@ -1,8 +1,5 @@
 {
   "build": { "dockerfile": "Dockerfile" },
-  "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-  ],
 
   "customizations": {
     "vscode": {
@@ -14,7 +11,13 @@
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "GitHub.copilot-labs"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.fontFamily": "MesloLGS NF"
+      }
     }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   }
 }
