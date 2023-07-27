@@ -29,7 +29,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /var/lib/apt/lists/*
 
 RUN ansible-galaxy role install diodonfrost.ohmyzsh && \
-    ansible-pull -U https://github.com/diodonfrost/ansible-role-ohmyzsh tests/test.yml
+    ansible-pull -U https://github.com/diodonfrost/ansible-role-ohmyzsh tests/test.yml -e "ohmyzsh_theme=powerlevel10k/powerlevel10k"
 
 RUN ansible-galaxy role install diodonfrost.p10k && \
-    ansible-pull -U https://github.com/diodonfrost/ansible-role-p10k tests/test.yml
+    ansible-pull -U https://github.com/diodonfrost/ansible-role-p10k tests/test.yml -e "zsh_plugin=ohmyzsh"
