@@ -13,6 +13,7 @@
         "GitHub.copilot-labs"
       ],
       "settings": {
+        // Fonts MesLGS NF should be install: https://github.com/romkatv/powerlevel10k-media/blob/master/MesloLGS%20NF%20Regular.ttf
         "terminal.integrated.fontFamily": "MesloLGS NF"
       }
     }
