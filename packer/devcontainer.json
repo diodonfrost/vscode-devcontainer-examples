@@ -1,0 +1,23 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.hcl",
+        "redhat.ansible",
+        "redhat.vscode-yaml",
+        "isudox.vscode-jetbrains-keybindings",
+        "vscode-icons-team.vscode-icons",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.copilot-labs"
+      ],
+      "settings": {
+        // Fonts MesLGS NF should be install: https://github.com/romkatv/powerlevel10k-media/blob/master/MesloLGS%20NF%20Regular.ttf
+        "terminal.integrated.fontFamily": "MesloLGS NF"
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
